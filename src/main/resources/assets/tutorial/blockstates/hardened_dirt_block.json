@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "tutorial:hardened_dirt_block" }
+    }
+}

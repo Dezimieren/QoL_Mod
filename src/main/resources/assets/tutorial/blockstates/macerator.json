@@ -1,0 +1,34 @@
+{
+   "variants":{
+      "burning=false,facing=north":{
+         "model":"tutorial:macerator"
+      },
+      "burning=false,facing=east":{
+         "model":"tutorial:macerator",
+         "y":90
+      },
+      "burning=false,facing=south":{
+         "model":"tutorial:macerator",
+         "y":180
+      },
+      "burning=false,facing=west":{
+         "model":"tutorial:macerator",
+         "y":270
+      },
+      "burning=true,facing=north":{
+         "model":"tutorial:lit_macerator"
+      },
+      "burning=true,facing=east":{
+         "model":"tutorial:lit_macerator",
+         "y":90
+      },
+      "burning=true,facing=south":{
+         "model":"tutorial:lit_macerator",
+         "y":180
+      },
+      "burning=true,facing=west":{
+         "model":"tutorial:lit_macerator",
+         "y":270
+      }
+   }
+}

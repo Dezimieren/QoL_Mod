@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#R#",
+        "RiR",
+        "#R#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cobblestone"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "tutorial:macerator",
+        "count": 1
+    }
+}

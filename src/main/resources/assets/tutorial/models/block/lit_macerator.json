@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures": 
+    {
+        "particle": "tutorial:blocks/macerator_top_off",
+        "up": "tutorial:blocks/macerator_top_on",
+        "down": "tutorial:blocks/macerator_side",
+        "north": "tutorial:blocks/macerator_front",
+        "east": "tutorial:blocks/macerator_side",
+        "south": "tutorial:blocks/macerator_side",
+        "west": "tutorial:blocks/macerator_side"
+    }
+}

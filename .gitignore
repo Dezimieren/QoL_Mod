@@ -1,0 +1,29 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Ignore everything in repository root
+/*
+
+# Directory to be excluded from ignore
+!/.gitignore
+!/src
