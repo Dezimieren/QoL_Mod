@@ -1,7 +1,7 @@
 package dezimieren.tutorial.init;
 
 import dezimieren.tutorial.Main;
-import dezimieren.tutorial.blocks.tnt.entitySmartTNT;
+import dezimieren.tutorial.blocks.tnt.smarttnt.entitySmartTNT;
 import dezimieren.tutorial.util.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;

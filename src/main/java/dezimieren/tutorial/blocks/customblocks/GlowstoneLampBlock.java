@@ -1,5 +1,6 @@
-package dezimieren.tutorial.blocks;
+package dezimieren.tutorial.blocks.customblocks;
 
+import dezimieren.tutorial.blocks.BlockBase;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "tutorial:blocks/compactor_top_off",
+        "up": "tutorial:blocks/compactor_top_off",
+        "down": "tutorial:blocks/compactor_side",
+        "north": "tutorial:blocks/compactor_front",
+        "east": "tutorial:blocks/compactor_side",
+        "south": "tutorial:blocks/compactor_side",
+        "west": "tutorial:blocks/compactor_side"
+    }
+}

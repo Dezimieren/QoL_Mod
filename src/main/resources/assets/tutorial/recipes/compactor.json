@@ -1,23 +1,23 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#R#",
-        "RiR",
-        "#R#"
+        "###",
+        "IRI",
+        "###"
     ],
     "key": {
         "#": {
             "item": "minecraft:cobblestone"
         },
+        "I": {
+            "item": "minecraft:iron_block"
+        },
         "R": {
             "item": "minecraft:redstone"
-        },
-        "i": {
-            "item": "minecraft:iron_block"
         }
     },
     "result": {
-        "item": "tutorial:macerator",
+        "item": "tutorial:compactor",
         "count": 1
     }
 }

@@ -1,4 +1,4 @@
-package dezimieren.tutorial.blocks.tnt;
+package dezimieren.tutorial.blocks.tnt.smarttnt;
 
 import dezimieren.tutorial.init.ModBlocks;
 import dezimieren.tutorial.util.Reference;

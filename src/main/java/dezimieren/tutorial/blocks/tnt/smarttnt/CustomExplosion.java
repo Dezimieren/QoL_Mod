@@ -1,4 +1,4 @@
-package dezimieren.tutorial.blocks.tnt;
+package dezimieren.tutorial.blocks.tnt.smarttnt;
 
 public abstract interface CustomExplosion
 {

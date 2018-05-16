@@ -1,6 +1,7 @@
-package dezimieren.tutorial.blocks.tnt;
+package dezimieren.tutorial.blocks.tnt.smarttnt;
 
 import javax.annotation.Nullable;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.MoverType;

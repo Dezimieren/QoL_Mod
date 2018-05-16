@@ -1,5 +1,8 @@
 package dezimieren.tutorial.util.handler;
 
+import dezimieren.tutorial.blocks.machines.compactor.ContainerCompactor;
+import dezimieren.tutorial.blocks.machines.compactor.GuiCompactorFurnace;
+import dezimieren.tutorial.blocks.machines.compactor.TileEntityCompactor;
 import dezimieren.tutorial.blocks.machines.macerator.ContainerMacerator;
 import dezimieren.tutorial.blocks.machines.macerator.GuiMaceratorFurnace;
 import dezimieren.tutorial.blocks.machines.macerator.TileEntityMacerator;
@@ -15,6 +18,8 @@ public class GuiHandler implements IGuiHandler {
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
 	{
 		if (ID == Reference.GUI_MACERATOR) return new ContainerMacerator(player.inventory, (TileEntityMacerator)world.getTileEntity(new BlockPos(x,y,z)));
+		if (ID == Reference.GUI_COMPACTOR) return new ContainerCompactor(player.inventory, (TileEntityCompactor)world.getTileEntity(new BlockPos(x,y,z)));
+
 		return null;
 	}
 	
@@ -22,6 +27,7 @@ public class GuiHandler implements IGuiHandler {
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
 	{
 		if (ID == Reference.GUI_MACERATOR) return new GuiMaceratorFurnace(player.inventory, (TileEntityMacerator)world.getTileEntity(new BlockPos(x,y,z)));
+		if (ID == Reference.GUI_COMPACTOR) return new GuiCompactorFurnace(player.inventory, (TileEntityCompactor)world.getTileEntity(new BlockPos(x,y,z)));
 
 		return null;
 	}

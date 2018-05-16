@@ -1,7 +1,7 @@
 package dezimieren.tutorial.util.handler;
 
-import dezimieren.tutorial.blocks.tnt.RenderSmartTNTPrimed;
-import dezimieren.tutorial.blocks.tnt.entitySmartTNT;
+import dezimieren.tutorial.blocks.tnt.smarttnt.RenderSmartTNTPrimed;
+import dezimieren.tutorial.blocks.tnt.smarttnt.entitySmartTNT;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;

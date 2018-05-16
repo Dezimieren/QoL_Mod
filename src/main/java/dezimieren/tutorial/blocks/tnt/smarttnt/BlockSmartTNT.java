@@ -1,4 +1,4 @@
-package dezimieren.tutorial.blocks.tnt;
+package dezimieren.tutorial.blocks.tnt.smarttnt;
 
 import dezimieren.tutorial.Main;
 import dezimieren.tutorial.blocks.BlockBase;
@@ -28,11 +28,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
-public class smartTNT extends BlockBase
+public class BlockSmartTNT extends BlockBase
 {
     public static final PropertyBool EXPLODE = PropertyBool.create("explode");
 
-    public smartTNT(String name)
+    public BlockSmartTNT(String name)
     {
         super(name, Material.TNT);
         this.setDefaultState(this.blockState.getBaseState().withProperty(EXPLODE, Boolean.valueOf(false)));
@@ -75,7 +75,7 @@ public class smartTNT extends BlockBase
     {
         if (!worldIn.isRemote)
         {
-            //EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(worldIn, (double)((float)pos.getX() + 0.5F), (double)pos.getY(), (double)((float)pos.getZ() + 0.5F), explosionIn.getExplosivePlacedBy());
+            //EntityTNTPrimed entitytnt = new EntityTNTPrimed(worldIn, (double)((float)pos.getX() + 0.5F), (double)pos.getY(), (double)((float)pos.getZ() + 0.5F), explosionIn.getExplosivePlacedBy());
             entitySmartTNT entitytntprimed = new entitySmartTNT(worldIn, (double)((float)pos.getX() + 0.5F), (double)pos.getY(), (double)((float)pos.getZ() + 0.5F), explosionIn.getExplosivePlacedBy());
         	entitytntprimed.setFuse((short)(worldIn.rand.nextInt(entitytntprimed.getFuse() / 4) + entitytntprimed.getFuse() / 8));
             worldIn.spawnEntity(entitytntprimed);

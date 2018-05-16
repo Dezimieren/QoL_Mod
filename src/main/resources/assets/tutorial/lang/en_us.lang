@@ -15,7 +15,9 @@ item.ender_glaive.name=Ender Glaive
 tile.hardened_dirt_block.name=Hardened Dirt
 tile.glowstone_lamp_block.name=Glowstone Lamp
 tile.macerator.name=Macerator
+tile.compactor.name=Compactor
 tile.smart_tnt.name=Smart TNT
 
 //Containers
 container.macerator=Macerator
+container.compactor=Compactor

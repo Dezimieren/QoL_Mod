@@ -33,7 +33,7 @@ public class Main {
 	public static void init(FMLInitializationEvent event)
 	{
 		//proxy.init();
-		RenderHandler.registerEntityRenders();
+		//RenderHandler.registerEntityRenders();
 		RegistryHandler.initRegisties();
 		ModCrafting.register();
 	}

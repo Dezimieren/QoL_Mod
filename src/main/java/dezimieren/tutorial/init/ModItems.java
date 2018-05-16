@@ -28,9 +28,9 @@ public class ModItems {
 	
 	//Material
 	//public static final ArmorMaterial ENDER_ARMOR = EnumHelper.addArmorMaterial("ender_armor", Reference.MOD_ID + ":ender", 13, new int[] {2,5,5,2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
-	public static final ToolMaterial TOOL_EMERALD = EnumHelper.addToolMaterial("tool_emerald", 3, 4000, 8.0F, 3.0F, 22);
+	public static final ToolMaterial TOOL_EMERALD = EnumHelper.addToolMaterial("tool_emerald", 3, 251, 8.0F, 3.0F, 10);
 	public static final ToolMaterial TOOL_OBSIDIAN = EnumHelper.addToolMaterial("tool_obsidian", 1, 4000, 6.0F, 2.0F, 5);
-	public static final ToolMaterial TOOL_ENDER =EnumHelper.addToolMaterial("tool_ender", 3, 1000000, 8.0F , 12.0F, 50);
+	public static final ToolMaterial TOOL_ENDER = EnumHelper.addToolMaterial("tool_ender", 3, 1000000, 8.0F , 12.0F, 50);
 	
 	//items and ores/shards
 	public static final Item OBSIDIAN_SHARD = new ItemBase("obsidian_shard");
