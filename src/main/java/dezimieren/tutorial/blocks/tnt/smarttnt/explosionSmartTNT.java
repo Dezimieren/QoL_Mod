@@ -99,37 +99,42 @@ public class explosionSmartTNT implements CustomExplosion
                         d0 = d0 / d3;
                         d1 = d1 / d3;
                         d2 = d2 / d3;
-                        float f1 = this.size * (0.95F + this.world.rand.nextFloat() * 0.1F);
+                        float f1 = this.size * (0.3F + this.world.rand.nextFloat() * 0.2F);
                         double d4 = this.x;
                         double d6 = this.y;
                         double d8 = this.z;
 
-                        for (float f2 = 0.3F; f1 > 0.0F; f1 -= f2 * 0.75F)
+                        for (float f2 = 0.3F; f1 > 0.0F; f1 -= f2 * 0.1F)
                         {
                             BlockPos blockpos = new BlockPos(d4, d6, d8);
                             IBlockState iblockstate = this.world.getBlockState(blockpos);
                             
                  
                             final float f4 = iblockstate.getBlock().getExplosionResistance(worldObj, blockpos, exploder, TNT);
-                           
-                            if (f4 < 100.0F)
+                            float f5;
+                            
+                            if (f4 < 1000000.0F)
                             {
-                            	f1 -= (f4 / 512.0F + 0.3F) * f2;
+                            	f5 = 0.0F;
                             }
                             else 
                             {
-                            	 f1 -= (f4 + 0.3F) * f2;
+                            	f5 = 200.0F;
                             }
-                           
-                            
+                            f1 -= (f4 + 0.3F) * f2;
+//                            if (iblockstate.getMaterial() != Material.AIR)
+//                            {
+//                            	f1 -= (f4 + 0.3F) * f2;
+//                            }
+                          
                             if (f1 > 0.0F)
                             {
                                 hashset.add(blockpos);
                             }
 
-                            d4 += d0 * f2 * 2.5;
-                            d6 += d1 * f2 * 2.5;
-                            d8 += d2 * f2 * 2.5;
+                            d4 += d0 * f2;
+                            d6 += d1 * f2;
+                            d8 += d2 * f2;
                         }
                     }
                 }
@@ -137,7 +142,7 @@ public class explosionSmartTNT implements CustomExplosion
         }
 
         this.affectedBlockPositions.addAll(hashset);
-        size *= 2.0F;
+        size *= 1.5F;
         int k1 = MathHelper.floor(this.x - size - 1.0D);
         int l1 = MathHelper.floor(this.x + size + 1.0D);
         int i2 = MathHelper.floor(this.y - size - 1.0D);
@@ -203,11 +208,7 @@ public class explosionSmartTNT implements CustomExplosion
                     if (!this.DropsBlocks || !block.canDropFromExplosion(TNT))
                     {
                     	continue;
-                        //block.dropBlockAsItemWithChance(this.world, blockpos, this.world.getBlockState(blockpos), 1.0F / this.size, 0);
-                    	
                     }
-                    block.dropBlockAsItemWithChance(this.world, blockpos, block.getDefaultState(), 1.0F, 0);
-    
                 }
             }
         }

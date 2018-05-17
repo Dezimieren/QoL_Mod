@@ -8,19 +8,22 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.RenderTNTPrimed;
+import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 
-public class RenderSmartTNTPrimed extends Render<entitySmartTNT>{
+public class RenderSmartTNTPrimed extends Render{
 
 	BlockRendererDispatcher blockRenderer;
 	public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/blocks/smart_tnt_side.png");
 	
 	public RenderSmartTNTPrimed(RenderManager manager) {
 		super(manager);
-		this.blockRenderer = Minecraft.getMinecraft().getBlockRendererDispatcher();
+		this.shadowSize = 0.5F;
+		//this.blockRenderer = Minecraft.getMinecraft().getBlockRendererDispatcher();
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -80,9 +83,20 @@ public class RenderSmartTNTPrimed extends Render<entitySmartTNT>{
         super.doRender(entity, x, y, z, entityYaw, partialTicks);
     }
 	
-	@Override
 	protected ResourceLocation getEntityTexture(entitySmartTNT entity) {
-		return TEXTURES;
+		return this.getEntityTexture((entitySmartTNT)entity);
 	}
 
+	@Override
+	protected ResourceLocation getEntityTexture(Entity entity) {
+		// TODO Auto-generated method stub
+		return TEXTURES;
+	}
+	
+	@Override
+	public void doRender(Entity entity, double x, double y, double z, float entityYaw, float partialTicks)
+	{
+		this.doRender((entitySmartTNT)entity, x, y, z, entityYaw, partialTicks);
+	}
+	
 }

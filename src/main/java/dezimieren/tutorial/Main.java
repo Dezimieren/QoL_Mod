@@ -26,14 +26,12 @@ public class Main {
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
-		
+		RegistryHandler.preInitRegistries();
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		//proxy.init();
-		//RenderHandler.registerEntityRenders();
 		RegistryHandler.initRegisties();
 		ModCrafting.register();
 	}
@@ -41,6 +39,6 @@ public class Main {
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		
+	
 	}
 }

@@ -10,9 +10,8 @@ public class CommonProxy {
 		
 	}
 
-//	public void registerRenders() {
-//		// TODO Auto-generated method stub
-//		
-//	}
-
+	public void registerVariantRenderer(Item item, int meta, String filename, String id) {
+		// TODO Auto-generated method stub
+		
+	}
 }

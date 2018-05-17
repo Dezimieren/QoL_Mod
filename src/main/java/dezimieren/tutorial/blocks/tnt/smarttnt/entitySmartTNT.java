@@ -112,9 +112,9 @@ public class entitySmartTNT extends Entity
 
     private void explode()
     {
-        float f = 4.0F;
-        //this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, 4.0F, true);
-        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, 0.0F, false);
+        float f = 2.0F;
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, 2.0F, true);
+//      this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, 0.0F, false);
         final explosionSmartTNT explosion = new explosionSmartTNT(this.world, this, this.posX, this.posY, this.posZ, f);
         explosion.doExplosionA();
         explosion.doExplosionB(true);
