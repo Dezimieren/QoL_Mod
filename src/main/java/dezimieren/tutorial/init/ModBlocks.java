@@ -15,7 +15,6 @@ public class ModBlocks {
 
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final Block HARDENED_DIRT_BLOCK = new BlockBase("hardened_dirt_block", Material.GRASS);
 	public static final Block GlOWSTONE_LAMP_BLOCK = new GlowstoneLampBlock("glowstone_lamp_block", Material.GLASS);
 	
 	public static final Block MACERATOR = new BlockMacerator("macerator");

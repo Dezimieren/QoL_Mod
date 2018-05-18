@@ -1,21 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#S#",
-        "S#S",
-        "#S#"
+        "#",
+        "C"
     ],
     "key": {
         "#": {
             "item": "minecraft:blaze_powder"
         },
-        "S": {
-            "item": "minecraft:sand",
+        "C": {
+            "item": "minecraft:coal",
 			"data": 0
         }
     },
     "result": {
-        "item": "minecraft:tnt",
-        "count": 1
+        "item": "minecraft:gunpowder",
+        "count": 5
     }
 }

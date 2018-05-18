@@ -20,6 +20,7 @@ public class MaceratorRecipes {
 	//private final Table<ItemStack, ItemStack, ItemStack> smeltingList = HashBasedTable.<ItemStack, ItemStack, ItemStack>create();
     private final Map<ItemStack, ItemStack> smeltingList = Maps.<ItemStack, ItemStack>newHashMap();
 	private final Map<ItemStack, Float> experienceList = Maps.<ItemStack, Float>newHashMap();
+	private final Map<ItemStack, Float> fortuneList = Maps.<ItemStack, Float>newHashMap();
 	
 	public static MaceratorRecipes getInstance() 
 	{
@@ -56,6 +57,7 @@ public class MaceratorRecipes {
 		this.smeltingList.put(input1, result);
 		this.experienceList.put(result, Float.valueOf(experience));
 	}
+
 	
 	public ItemStack getMaceratorResult(ItemStack input1) //removed input2 from tutorial
 	{

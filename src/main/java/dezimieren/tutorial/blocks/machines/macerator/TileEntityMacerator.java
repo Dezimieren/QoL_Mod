@@ -1,5 +1,7 @@
 package dezimieren.tutorial.blocks.machines.macerator;
 
+import dezimieren.tutorial.init.ModBlocks;
+import dezimieren.tutorial.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -218,9 +220,27 @@ public class TileEntityMacerator extends TileEntity implements IInventory, ITick
 			this.markDirty();
 	}
 	
-	public int getCookTime(ItemStack input1)
+	public int getCookTime(ItemStack fuel)
 	{
-		return 200;
+		if(fuel.isEmpty()) return 0;
+		else
+		{
+			Item item = fuel.getItem();
+			
+			if (item != ModItems.NETHERNOL)
+			{
+				if (item != ModItems.ENRICHED_NETHERNOL)
+				{
+					return 200;
+				}
+				else 
+				{
+					return 25;
+				}
+			}
+			else return 25;
+		}
+		
 	}
 	
 	private boolean canSmelt()
@@ -308,6 +328,14 @@ public class TileEntityMacerator extends TileEntity implements IInventory, ITick
             else if (item == Item.getItemFromBlock(Blocks.COAL_BLOCK))
             {
                 return 16000;
+            }
+            else if (item == ModItems.NETHERNOL)
+            {
+                return 69120;
+            }
+            else if (item == ModItems.ENRICHED_NETHERNOL)
+            {
+                return 69120000;
             }
             else if (item instanceof ItemTool && "WOOD".equals(((ItemTool)item).getToolMaterialName()))
             {

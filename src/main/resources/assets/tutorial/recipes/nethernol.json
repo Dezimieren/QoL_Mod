@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "N"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:magma_cream"
+        },
+        "N": {
+            "item": "minecraft:netherrack"
+        }
+    },
+    "result": {
+        "item": "tutorial:nethernol",
+        "count": 1
+    }
+}

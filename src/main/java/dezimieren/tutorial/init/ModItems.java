@@ -34,6 +34,8 @@ public class ModItems {
 	
 	//items and ores/shards
 	public static final Item OBSIDIAN_SHARD = new ItemBase("obsidian_shard");
+	public static final Item NETHERNOL = new ItemBase("nethernol");
+	public static final Item ENRICHED_NETHERNOL = new ItemBase("enriched_nethernol");
 	
 	
 	

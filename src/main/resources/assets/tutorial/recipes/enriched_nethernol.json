@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "M"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "M": {
+            "item": "tutorial:nethernol"
+        }
+    },
+    "result": {
+        "item": "tutorial:enriched_nethernol",
+        "count": 1
+    }
+}

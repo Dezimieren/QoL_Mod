@@ -10,6 +10,8 @@ item.emerald_axe.name=Emerald Axe
 item.emerald_shovel.name=Emerald Shovel
 item.macerator.name=Macerator
 item.ender_glaive.name=Ender Glaive
+item.nethernol.name=Nethernol
+item.enriched_nethernol.name=Enriched Nethernol
 
 //Blocks
 tile.hardened_dirt_block.name=Hardened Dirt
