@@ -227,18 +227,14 @@ public class TileEntityMacerator extends TileEntity implements IInventory, ITick
 		{
 			Item item = fuel.getItem();
 			
-			if (item != ModItems.NETHERNOL)
+			if (item == ModItems.NETHERNOL || item == ModItems.ENRICHED_NETHERNOL)
+            {
+                return 25;
+            }
+			else
 			{
-				if (item != ModItems.ENRICHED_NETHERNOL)
-				{
-					return 200;
-				}
-				else 
-				{
-					return 25;
-				}
+				return 200;
 			}
-			else return 25;
 		}
 		
 	}
